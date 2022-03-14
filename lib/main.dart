@@ -13,11 +13,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData.dark().copyWith(scaffoldBackgroundColor: darkBlue),
-      home: const SafeArea(
-        child: Scaffold(
-          body: ParallaxRecipe(),
-        ),
-      ),
+      home: const ParallaxRecipe(),
     );
   }
 }
