@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 import '../delegates/parallax_flow_delegate.dart';
@@ -21,10 +22,12 @@ class ParallaxImage extends StatelessWidget {
         backgroundImageKey: imageKey,
       ),
       children: [
-        Image.network(
-          imageUrl,
-          key: imageKey,
+        CachedNetworkImage(
+          imageUrl: imageUrl,
+          placeholder: (context, url) => const CircularProgressIndicator(),
+          errorWidget: (context, url, error) => const Icon(Icons.broken_image),
           fit: BoxFit.cover,
+          key: imageKey,
         ),
       ],
     );
