@@ -1,16 +1,8 @@
-# flutter_parallax
+# Flutter Parallax
 
-A new Flutter project.
+A simple Flutter project to improve design skills.
 
-## Getting Started
+This project was created following the [official documentation](https://docs.flutter.dev/cookbook/effects/parallax-scrolling) and some refactorings to apply a better code organization.
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![Scrolling with parallax effect](readme_medias/scrolling_example.gif)
