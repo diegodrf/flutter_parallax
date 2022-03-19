@@ -24,7 +24,12 @@ class ParallaxImage extends StatelessWidget {
       children: [
         CachedNetworkImage(
           imageUrl: imageUrl,
-          placeholder: (context, url) => const CircularProgressIndicator(),
+          placeholder: (context, url) => const Center(
+            child: Padding(
+              padding: EdgeInsets.all(8.0),
+              child: CircularProgressIndicator(),
+            ),
+          ),
           errorWidget: (context, url, error) => const Icon(Icons.broken_image),
           fit: BoxFit.cover,
           key: imageKey,
